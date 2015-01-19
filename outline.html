@@ -1,0 +1,314 @@
+<html>
+
+  <head>
+    <title>EE 306 Course Outline</title>
+  </head>
+
+  <body>
+    <br>
+    <center>
+      <h2>Department of Electrical and Computer Engineering</h2>
+      <h3>The University of Texas at Austin</h3>
+    </center>
+    <hr>
+    <br>
+
+
+         <!--<li>  blinky notice script <li>>
+
+         <script type="text/javascript">
+                 <!<li>
+                 spe=500;
+                 na=document.all.tags("blink");
+                 swi=1;
+                 bringBackBlinky();
+
+                 function bringBackBlinky() {
+
+                         if (swi == 1) {
+                                 sho="visible";
+                                 swi=0;
+                         }
+                         else {
+                                 sho="hidden";
+                                 swi=1;
+                         }
+
+                         for(i=0;i<na.length;i++) {
+                                 na[i].style.visibility=sho;
+                         }
+
+                         setTimeout("bringBackBlinky()", spe);
+                 }
+                 <li>>
+         </script>
+
+         <!<li>
+    <center>
+         <font color = "red" size=+3 > <blink>Preliminary </blink></font >
+    </center>
+    <br>
+         <li>>
+-->
+
+    EE 306, Fall, 2014<br>
+    Muhammad Aater Suleman, Instructor<br>
+    TAs:Owais Khan<br>
+    Course Outline<br>
+August 27, 2014
+
+<br>
+<br>
+<br>
+<br> 
+August 28: Lecture 1. Overview of EE 306.
+<ul>
+   <li> The computer -- a complex system organized in levels of interpretation.  
+   <li>The computer -- a universal computational device; given enough time 
+     and space it can do anything any other computational device does.  
+</ul>
+August 30: Discussion Session. Orientation to the LRC system, tools.
+<br>
+<br>
+September 2: Labor Day. University closed.  No class.
+<br>
+<br>
+September 4: Lecture 2: Bits and operations on bits.  
+<ul>
+   <li> The bit as a unit of information.
+   <li> Encoding of bits: Binary numbers (integer data type, ASCII characters.
+   <li> Negative numbers, 2's complement representation, sign-extension. 
+   <li> hex representation of binary numbers.
+   <li> Arithmetic operations on numbers.  ADD, SUB.  [Note that x+x = left shift]
+   <li> Logical operations on bits.  AND, OR, NOT.
+</ul>
+September 6: Discussion Session. Emphasis on Chapters 1,2, problem set 1.
+<br>
+<br>
+<b>Problem set 1, due before class, <s color=red> September 9</s> <font color=red> September 11</font>.</b>
+<br>
+<br>
+September 9: Lecture 3. Bits and operations on bits (continued).
+<br>
+<br>  
+September 11: Lecture 4. Bits and operations on bits (continued). 
+<br>
+<br>
+September 13: Discussion Session. Emphasis on Chapter 2, problem set 2
+<br>
+<br>
+September 16: Lecture 5. Basic Logic Structures.
+<ul>
+   <li> The transistor as a switch
+   <li> Basic Gates (AND, OR, NOT)
+   <li> Truth table representations
+   <li> Any arbitrary function can be built out of these gates
+      (no attempt at minimization.  Just an awareness exercise)
+   <li> full ADDER, MUX, DECODER
+   <li> Basic storage element (Gated RS latch)
+   <li> A register
+</ul>
+September 18: Lecture 6. Memory and Finite State Machines
+<ul>
+   <li> a logic circuit to implement a small piece of memory (perhaps 2**2 x 3)
+   <li> concept of memory: address space, addressability 
+   <li> The notion of state (one of the most important concepts in engineering)
+   <li> State diagram, Next State table, State Assignment
+   <li> Implementation example: sequential machine
+</ul>
+September 20: Discussion Session. Emphasis on Chapter 3.
+<br>
+<br> 
+<b>Problem set 2, due before class, <s color=red> September 23</s><font color = red> September 25</font>.</b>
+<br>
+<br>
+September 23: Lecture 7. Introduction to Von Neumann model. 
+<ul>
+   <li> the basic structure of the Von Neumann model, showing the basic flow.
+   <li> instruction = opcode, operands
+   <li> encoding of instructions and data
+   <li> instruction cycle (Fetch, Decode, EA, Fetch data, Execute, Store result)
+   <li> organization of memory 
+   <li> address space, addressability revisited (MAR, MDR)
+</ul>
+September 25: Lecture 8. ISA Specification of the LC-3 
+<ul>
+   <li> instruction formats
+   <li> operate, data movement, and control instructions
+   <li> LD/ST (also, indirects) 
+   <li> control (condition codes: N,Z,P)
+   <li> The datapath necessary to implement the LC-3
+   <li> I/O via the TRAP instruction [Keyboard in, screen out]
+</ul>
+September 27: Discussion Session: Introduction to the LC-3 Simulator and Programming Lab 1.
+<br>
+<br>
+September 30: Lecture 9. Introduction to programming in LC-3 machine language.
+<br>
+<br>
+October 2: Lecture 10. A more sophisticated LC-3 program (cf. Chapters 5,6). 
+<ul>
+   <li> Elements of Problem Solving (stepwise refinement, systematic decomposition, etc.)
+   <li> Fundamentals of Debugging (setting breakpoints, single-step, deposit, examine, etc.)
+   <li> the control structure of a stored program (sequential, conditional, iteration)
+   <li> a detailed example in machine language 
+   <li> example will use keyboard input, crt output.
+   <li> example will include entering data via the keyboard and outputting on the monitor 
+</ul>
+<b>Programming Lab 1 due, 11:59pm, October 3.</b>
+<br>
+<br>
+October 4: Discussion Session: Review for Exam 1.
+<br>
+<br>
+<b>Problem set 3, due before class, October 7.</b>
+<br>
+<br>
+October 7: Lecture 11. Review.
+<br>
+<br>
+October 9: Lecture 12.  <b>Exam 1.</b>
+<br>
+<br>
+October 11: NO Discussion Session.  Catch up on sleep, or leave for Dallas!
+<br>
+<br>
+October 14: Lecture 13.  Moving up a level, Assembly Language and the Assembler.
+<br>
+<br>
+October 16: Lecture 14. Detailed examples in Assembly Language. 
+<ul>
+   <li> going from higher to lower level: interpretation vs. translation
+   <li> translation: what do assemblers and compilers do?
+   <li> hand assemble programs from earlier lectures. 
+   <li> revisiting the character count problem
+</ul>
+October 18: Discussion Session: Emphasis on Chapter 7 and Programming Lab 2.
+<br>
+<br>
+<b>Programming Lab 2 due, 11:59pm, October 20.</b>
+<br>
+<br>
+October 21: Lecture 15. Programming in Assembly Language with Data Structures I
+<br>
+<br>
+October 23: Lecture 16. Programming in Assembly Language with Data Structures II
+<br>
+<br>
+October 25: Discussion Session: Emphasis on Problem set 4
+<br>
+<br>
+<b>Problem set 4, due before class, October 28.</b>
+<br>
+<br>
+October 28: Lecture 17.  Physical I/O.
+<ul>
+   <li> asynchronous activity
+   <li> memory mapped vs. special I/O instructions
+   <li> program control vs. device (interrupt) driven
+   <li> device registers (KBDR, KBSR, DDR, DSR)
+   <li> Synchronization via the ready bit.
+   <li> interrupt enable bit
+   <li> I/O Service Routines
+</ul>
+October 30: Lecture 18. Physical I/O, continued.
+<br>
+<br>
+November 1: Discussion Session: Emphasis on Programming Lab 3
+<br>
+<br>
+<b>Programming Lab 3 due, 11:59pm, November 3.</b>
+<br>
+<br>
+November 4: Lecture 19. The TRAP instruction.
+<br>
+<br>
+November 6: Lecture 20. Subroutines (JSR/RET mechanism)
+<ul>
+   <li> saving/restoring state
+   <li> success/failure mechanisms
+</ul>
+November 8: Discussion Session: Chapter 8,9.  Prepare for Exam 2.
+<br>
+<br>
+<b>Problem set 5, due before class, November 11.</b>
+<br>
+<br>
+November 11: Lecture 21. Review or catch up.
+<br>
+<br>
+November 13: Lecture 22. <b>Exam 2.</b>
+<br>
+<br>
+November 15: Discussion Session: Deep breath: General review.
+<br>
+<br> 
+November 18: Lecture 23.  Stacks.  Parameters.  How are they passed?  
+<br>
+<br>
+November 20: Lecture 24.  Interrupt processing
+<br>
+<br>
+November 22: Discussion Session: Programming Labs 4,5.
+<br>
+<br> 
+<b>Programming Lab 4 due, 11:59pm, <s>November 24</s> <font color=red>November 27</font>.</b>
+<br>
+<br>
+November 25: Lecture 25.  The Calculator Example (pulling a lot together).
+<ul>
+   <li> ASCII/2's-complement conversion
+   <li> Stack arithmetic
+</ul>
+November 27: Lecture 26. Special lecture -- to be announced.
+<br>
+<br>
+November 28,29: Thanksgiving Day recess.  Enjoy the holiday.
+<br>
+<br>
+December 2: Lecture 27. Pot pourri
+<ul>
+   <li> Parallelism.  The latest hot button!
+   <li> Preview of coming attractions: The ARM ISA
+</ul>
+December 4: Lecture 28. Any OTHER questions!
+<br>
+<br>
+December 6: Discussion Session: Last discussion session before final exam.
+<br>
+<br>
+<b>Programming Lab 5 due, December 6, 5pm.</b>
+<br>
+<br>
+<b>Problem set 6, not to be handed in, use for final exam preparation.</b>
+<br>
+<br>
+December 13. <b>Final Exam</b>, 7 to 10pm.  (according to the Registrar's Course Schedule, which <b>he can change</b>.)
+<br>
+<br>
+<br> 
+<b>Programming Labs: </b>
+<br>
+<ul>
+<li> 1st programming Lab (machine language) -- Due: October 3, 11:59pm. 
+<li> 2nd programming Lab (assembly language) -- Due: October 20, 11:59pm.
+<li> 3rd programming Lab (assembly language) -- Due: November 3, 11:59pm.
+<li> 4th programming Lab (assembly language) -- Due: November 24, 11:59pm.
+<li> 5th programming Lab (assembly language) -- Due: December 6, 5pm.
+</ul>
+<b> Problem Sets: </b>
+<br>
+<ul>
+<li> 1st problem set, (emphasis on Chapters 1,2). Due: just before class, September 9. 
+<li> 2nd problem set, (emphasis on Chapter 2,3). Due: just before class, September 23.
+<li> 3rd problem set, (emphasis on Chapter 4,5). Due: just before class, October 7. (Note: exam on October 9)
+<li> 4th problem set, (emphasis on Chapter 7). Due: just before class, October 28.
+<li> 5th problem set, (emphasis on Chapters 8,9). Due: just before class, November 11.  (Note: exam on November 13)
+<li> 6th problem set, (emphasis on Chapter 10).  Not to turn in. 
+</ul>
+
+    <hr>
+  </body>
+
+</html>
+

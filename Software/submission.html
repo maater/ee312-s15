@@ -1,0 +1,165 @@
+
+<!-- saved from url=(0058)http://maater.github.io/ee306-f14/Software/submission.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+	<title>Programming assignment submission</title>
+<style type="text/css"></style></head><body bgcolor="white">
+
+<center>
+	<h2>Program Submission Instructions</h2>
+	<h4>Fall 2014</h4>
+
+</center>
+<hr>
+
+<h4>We will not accept email submissions. If you email a TA or Professor Suleman
+	your Programming Assignment, the TA/Professor Suleman will delete your email
+	and ignore your submission. You will receive a zero on the Programming
+	Assignment. Learn how to submit your program early so this does not happen
+	to you.</h4>
+<p>
+  To submit your programs for this class, you will be using a version control
+  tool called Git. Git is a 
+  system that allows you to submit your programs to a repository
+where the instructors will be able to view and grade your submission.</p>
+<p>
+  There are four steps outlined below: installing Git, setting up your
+  submission directory, updating your submission directory, and submitting your
+  program.  Installing Git only needs to be done once. Setting up your submission directory only
+  needs to be done once. Both updating your submission directory and submitting
+  your program need to be done <b>for every programming assignment you
+submit.</b></p>
+<p>
+  If you are using OS X, Linux, or any other operating system, we recommend using Windows for the lab assignments. The LC-3b simulator works best on Windows, and using the Windows version
+  will allow you to focus your work on the labs themselves. There are Windows machines available in the ECE labs, and instructions on how to use them can be found
+  <a href="http://www.ece.utexas.edu/it/accounts">here</a>. All of the procedures shown below should work identically on the ECE lab machines.</p>
+<p>
+  Finally, if you encounter issues during submission, you may attempt the
+  following three steps in sequence:
+</p>
+<ol>
+	<li><b>Backup your files/programs.</b> You can do this by copying your
+	files/programs into another directory, which you should <b>not</b>
+	delete.</li><br>
+	<li>Delete your entire submission directory</li><br>
+	<li>Repeat the steps below beginning with setting up your submission
+	directory.</li></ol>
+<p>
+  <b>Remember: You are responsible for the security of your files. Do NOT allow
+    anyone to access your files! If someone cheats by accessing your files
+    because they were not properly secured, both parties will be found guilty of
+    cheating and suffer the same consequences.</b>
+</p>
+
+<p>Having problems submitting? Contact a TA in person during office hours.</p>
+<h2>Installing Git (Windows)</h2><ol>
+  <li>Navigate to <a href="http://git-scm.com/download/win">http://git-scm.com/download/win</a>. The download for Git for Windows should begin automatically.</li>
+  <li>Run the installer file you downloaded in step 1.</li>
+	<li>Accept all the default settings by clicking Next until the installation is complete.</li>
+  <li>If Windows asks for permission to install Git, click Yes.  </li>
+  <li>If Git asks you to restart your computer, click Yes (this will
+	immediately restart your computer. Save your work beforehand).</li>
+	</ol>
+<h2>Setting Up Your Submission Directory</h2>
+<strong>For this part, you will need to have created a Github account and installed Git for Windows.</strong>
+<ol>
+  <li>Create a directory on the machine you are using where you can work on and submit EE306 labs. For example, you may call it &quot;EE306_Labs&quot;.</li>
+  <li>Enter this diretory and right click on empty white space. Click on the option labeled &quot;Git Bash&quot;.<br>
+    <br>
+  <img src="submission_figs/git_bash_context.jpg" width="955" height="662">    <br>
+  <br>
+  </li>
+  <li>A window in which you can type commands should popup. Type the following command and  press Enter: 
+    <pre>git config --global user.name "Your Name"</pre>
+  </li>
+  <li>Type the following command and press Enter: <pre>git config --global push.default simple</pre></li>
+  <li>Type the following command and press Enter:
+    <pre>git config --global user.email "your_email@utexas.edu"</pre><br>
+  <img src="submission_figs/git_config.jpg" width="677" height="393">
+  <br>
+  <br>
+  </li>
+  <li>Now that you have set up the configuration options, you must get a copy of your repository so that you can make changes and upload them for the instructors to see. You can do this by typing in the following command and pressing Enter: 
+    <pre>git clone https://github.com/ee306-f14/&lt;EID&gt;.git</pre>
+  Where &lt;EID&gt; should be replaced with your EID. For example: <pre>git clone https://github.com/ee306-f14/xyz123.git</pre> If you are prompted to enter your Github username and password, please enter it. Note that your password will not be shown as you type it.
+  You should get a reuslt <em>similar</em> to what you see below.<br>
+  <br>
+  <img src="submission_figs/git_clone.jpg" width="677" height="393" alt="">  <br>
+  <br>
+  </li>
+  <li>You should see a new directory appear in the directory you created in step 1. This directory will be your submission directory. Inside the submission directory, you will see a series of files pertaining to the labs. You will modify these existing files with the requirements for the lab and then upload them for submission.<br>
+    <br>
+  <img src="submission_figs/git_clone_new_directory.jpg" width="954" height="661">
+  </li>
+</ol>
+<b>Note: If you see folders called ".git", do not modify/delete
+  them.</b>
+<a name="updating_submission_dir"></a>
+<h2>Updating Your Submission Directory</h2>
+<p><strong>For this part, you will need to have created a Github account and set up your submission directory.</strong></p>
+<p><strong><font color="red">You MUST perform this procedure before beginning any of the lab assignments.</font></strong></p>
+<ol>
+  <li>Enter the submission directory created in "Setting Up Your Submission
+	Directory" (e.g., EE306_Labs\EID). Right click on empty white space. Click on
+  the option labeled "Git Bash". <br> 
+  <br>
+  <img src="submission_figs/git_bash_context_2.jpg" width="956" height="662"><br>
+  <br>
+  </li>
+  <li>Type the following command and press Enter: 
+    <pre>git pull</pre>
+  If you are prompted to enter your Github username and password, please enter it. Note that your password will not be shown as you type it. The output may not necessarily match what you see below. If the output differs from what you see below, check the submission directory and you should see new files added.<br>
+  <br>
+  <img src="submission_figs/git_pull.jpg" width="677" height="393">  </li></ol>
+
+<a name="submitting_prg"></a>
+<h2>Submitting Your Program</h2>
+<p>Once you have completed the  the lab, you are ready to submit your files. The individual lab assignments will specify which files you should modify for that lab.<strong> Only modify files that are specified in the current lab assignment you are working with.</strong></p>
+<p>Note: You
+	can resubmit your program as many times as you want up until the deadline.
+	We will ignore any submissions you make beyond the deadline, so be sure to
+finish your lab on time.</p>
+<ol>
+	<li>Enter the submission directory created in "Setting Up Your Submission
+	Directory" (e.g., EE306_Labs\EID). Right click on empty white space. Click on
+  the option labeled "Git Bash". <br> 
+  <br>
+  <img src="submission_figs/git_bash_context_2.jpg" width="956" height="662"><br>
+  <br>
+  </li>
+	<li>Type the following command and press Enter: <pre>git commit -a -m "message"</pre>
+    <strong></strong>Please type in a meaningful message inside the quotation marks. For example, if you have completed the lab assignment, say something along the lines of "Completed Lab 0".<br>
+    <br>
+    This command saves all the changes you have made to the files inside the repository. <strong>This will only saves the changes on your local machine, meaning the instructors will not have access to your lab solution until you complete step 3. </strong><br>
+	<br>
+	<img src="submission_figs/git_commit.jpg" width="677" height="393">	<br>
+	<br>
+	</li>
+  <li>Once you have saved the changes, you must upload it to Github so that the instructors can access it. To upload your code, type the following command and press Enter: <pre>git push</pre>
+    If you are prompted to enter your Github username and password, please enter it. Note that your password will not be shown as you type it.
+    You should get a result <em>similar</em> to what you see below.<br>
+    <br>
+  <img src="submission_figs/git_push.jpg" width="677" height="393"><br>
+  <br>
+  Congratulations! You've submitted your program.</li></ol>
+<h2>Verifying Your Submission</h2>
+<p>
+Once you have submitted your solution, you can check to make sure the instructors have access to it. </p>
+<ol><a name="verifying_submission">
+	<li>In your browser, navigate to	<tt>https://github.com/ee306-f14/&lt;EID&gt;/commits/master<b></b></tt> where &lt;EID&gt; is replaced with your EID.</li>
+	<li>You should see your latest submission listed on the webpage.<br>
+	  <br>
+	  <img src="submission_figs/github_commit.jpg" width="959" height="288"><br>
+	</li>
+	<li>Try refreshing your browser if it appears that the file on the website
+	is not updating.</li></ol>
+<p>
+  <b>Note: If you are familiar with command-line based version control tools, feel
+    free to use these at your own risk. We are not responsible if you fail to
+    correctly submit your program with these tools.</b>
+</p>
+
+
+</body></html>
